@@ -1,0 +1,290 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+nav .container .navbar-brand {
+  font-weight: bold;
+  color: #063854;
+}
+
+nav .container .nav-link, nav .container .info--telephone {
+  font-weight: 500;
+  color: #063854 !important;
+}
+
+section.hero {
+  color: #063854;
+}
+
+section.hero .box--info {
+  max-width: 500px;
+}
+
+section.hero .box--info h3 {
+  font-size: 1rem;
+}
+
+section.hero .box--info h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+section.hero .box--info p {
+  font-size: 1rem;
+}
+
+section.hero .box-sec-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.hero .box-img-hero img.hero--image {
+  max-width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.vaksinasi {
+  margin: 8rem 0 3rem 0;
+}
+
+section.vaksinasi .box--vaksinasi img {
+  max-width: 150px;
+  max-height: 70px;
+}
+
+section.services {
+  margin: 8rem 0 3rem 0;
+}
+
+section.services .container .box--services {
+  max-width: 900px;
+  margin-bottom: 3rem;
+  color: #063854;
+}
+
+section.services .container .box--services h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+section.services .container .box--services h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+section.services .container .box--services h1 span {
+  color: #007abc;
+}
+
+section.services .container .box--services p {
+  font-size: 15px;
+}
+
+section.services .container a {
+  text-decoration: none;
+}
+
+section.services .container a .box--layanan {
+  border: 2px #007abc solid;
+  padding: 16px 12px;
+  border-radius: 5px;
+  color: #063854;
+  width: auto;
+  height: 200px;
+}
+
+section.services .container a .box--layanan img {
+  width: 55px;
+  height: auto;
+}
+
+section.services .container a .box--layanan h4 {
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+section.services .container a .box--layanan:hover {
+  background-color: #007abc;
+  color: #fff;
+}
+
+section.getvaksinasi {
+  overflow-x: hidden;
+  margin: 8rem 0 5rem 0;
+}
+
+section.getvaksinasi .container .baris-getvaksin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.getvaksinasi .container .baris-getvaksin img.imagegetvac {
+  max-width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.getvaksinasi .container .box-getvaksin {
+  color: #063854;
+  max-width: 500px;
+}
+
+section.getvaksinasi .container .box-getvaksin h1 {
+  font-weight: 600;
+}
+
+section.getvaksinasi .container .box-getvaksin h1 span {
+  color: #007abc;
+}
+
+section.getvaksinasi .container .box-getvaksin p {
+  font-size: 1.1rem;
+}
+
+section.getvaksinasi .container .box-getvaksin button {
+  border: none;
+  font-weight: 600;
+  color: #271a82;
+  background-color: #68c9af;
+  padding: 12px 25px;
+  border-radius: 5px;
+}
+
+footer .container h4 {
+  color: #063854;
+  font-size: 1.2rem;
+}
+
+footer .container p {
+  color: #007abc;
+}
+
+footer .container p a {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  section.services .container .box--layanan {
+    margin-top: 25px;
+  }
+  section.getvaksinasi .container .baris-getvaksin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.getvaksinasi .container .baris-getvaksin img.imagegetvac {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section.hero {
+    overflow-x: hidden;
+  }
+  section.hero .box--info {
+    max-width: 500px;
+  }
+  section.hero .box--info p {
+    margin-bottom: 4rem;
+  }
+  section.hero .box-sec-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.hero .box-img-hero img.hero--image {
+    max-width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.vaksinasi .box--vaksinasi img {
+    margin-bottom: 1rem;
+    max-width: 150px;
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  section.hero .box--info {
+    max-width: 500px;
+  }
+  section.hero .box--info h3 {
+    font-size: 0.8rem;
+  }
+  section.hero .box--info h1 {
+    font-size: 2.5rem;
+  }
+  section.hero .box--info p {
+    font-size: 0.9rem;
+  }
+  section.hero .box-sec-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.hero .box-img-hero img.hero--image {
+    max-width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.services .box--services h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  section.services .box--services h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  section.services .box--services h1 span {
+    color: #007abc;
+  }
+  section.services .box--services p {
+    font-size: 13px;
+  }
+  section.getvaksinasi {
+    overflow-x: hidden;
+  }
+  section.getvaksinasi .container .baris-getvaksin img.imagegetvac {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,302 @@
+* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	overflow-x: hidden;
+}
+
+$colorPrimary: #063854;
+$colorSecondary: #007abc;
+$colorBgBtn: #68c9af;
+$colorTxtBtn: #271a82;
+
+// Navbar
+nav {
+	.container {
+		.navbar-brand {
+			font-weight: bold;
+			color: $colorPrimary;
+		}
+		.nav-link {
+			font-weight: 500;
+			color: $colorPrimary !important;
+		}
+		.info--telephone {
+			@extend .nav-link;
+		}
+	}
+}
+// End Navbar
+
+// Hero
+section.hero {
+	color: $colorPrimary;
+	.box--info {
+		max-width: 500px;
+		h3 {
+			font-size: 1rem;
+		}
+		h1 {
+			font-size: 3rem;
+			font-weight: 600;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+	.box-sec-hero {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.box-img-hero {
+		img.hero--image {
+			max-width: 400px;
+			object-fit: cover;
+		}
+	}
+}
+// End Hero Section
+
+// Vaksinasi Section
+section.vaksinasi {
+	margin: 8rem 0 3rem 0;
+	.box--vaksinasi {
+		img {
+			max-width: 150px;
+			max-height: 70px;
+		}
+	}
+}
+// End Vaksinasi Section
+
+// Services Section
+section.services {
+	margin: 8rem 0 3rem 0;
+	.container {
+		.box--services {
+			max-width: 900px;
+			margin-bottom: 3rem;
+			color: $colorPrimary;
+			h2 {
+				font-size: 24px;
+				font-weight: 600;
+			}
+			h1 {
+				font-size: 35px;
+				font-weight: 600;
+				span {
+					color: $colorSecondary;
+				}
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+		a {
+			text-decoration: none;
+			.box--layanan {
+				border: 2px $colorSecondary solid;
+				padding: 16px 12px;
+				border-radius: 5px;
+				color: $colorPrimary;
+				width: auto;
+				height: 200px;
+				img {
+					width: 55px;
+					height: auto;
+				}
+				h4 {
+					padding-top: 10px;
+					font-weight: 600;
+					font-size: 20px;
+				}
+			}
+			.box--layanan:hover {
+				background-color: $colorSecondary;
+				color: #fff;
+			}
+		}
+	}
+}
+// End Services Section
+
+// Info Vaccine
+section.getvaksinasi {
+	overflow-x: hidden;
+	margin: 8rem 0 5rem 0;
+	.container {
+		.baris-getvaksin {
+			display: flex;
+			align-items: center;
+			img.imagegetvac {
+				max-width: 500px;
+				object-fit: cover;
+			}
+		}
+		.box-getvaksin {
+			color: $colorPrimary;
+			max-width: 500px;
+			h1 {
+				font-weight: 600;
+				span {
+					color: $colorSecondary;
+				}
+			}
+			p {
+				font-size: 1.1rem;
+			}
+			button {
+				border: none;
+				font-weight: 600;
+				color: $colorTxtBtn;
+				background-color: $colorBgBtn;
+				padding: 12px 25px;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+// End Info Vaccine
+
+// Footer
+footer {
+	.container {
+		h4 {
+			color: $colorPrimary;
+			font-size: 1.2rem;
+		}
+		p {
+			color: $colorSecondary;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+// End Footer
+
+// Setting Breakpoint (Responsive)
+
+@media (max-width: 992px) {
+	section.services {
+		.container {
+			.box--layanan {
+				margin-top: 25px;
+			}
+		}
+	}
+	section.getvaksinasi {
+		.container {
+			.baris-getvaksin {
+				display: flex;
+				flex-direction: column;
+				img.imagegetvac {
+					margin-bottom: 4rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	// Hero
+	section.hero {
+		overflow-x: hidden;
+		.box--info {
+			max-width: 500px;
+			p {
+				margin-bottom: 4rem;
+			}
+		}
+		.box-sec-hero {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.box-img-hero {
+			img.hero--image {
+				max-width: 350px;
+				object-fit: cover;
+			}
+		}
+	}
+	// End Hero Section
+
+	// Vaksinasi Section
+	section.vaksinasi {
+		.box--vaksinasi {
+			img {
+				margin-bottom: 1rem;
+				max-width: 150px;
+				max-height: 70px;
+			}
+		}
+	}
+	// End Vaksinasi Section
+}
+
+@media (max-width: 576px) {
+	// Hero Section
+	section.hero {
+		.box--info {
+			max-width: 500px;
+			h3 {
+				font-size: 0.8rem;
+			}
+			h1 {
+				font-size: 2.5rem;
+			}
+			p {
+				font-size: 0.9rem;
+			}
+		}
+		.box-sec-hero {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.box-img-hero {
+			img.hero--image {
+				max-width: 350px;
+				object-fit: cover;
+			}
+		}
+	}
+	// End Hero Section
+
+	// Services Section
+	section.services {
+		.box--services {
+			h2 {
+				font-size: 20px;
+				font-weight: 600;
+			}
+			h1 {
+				font-size: 30px;
+				font-weight: 600;
+				span {
+					color: $colorSecondary;
+				}
+			}
+			p {
+				font-size: 13px;
+			}
+		}
+	}
+	// End Services Section
+	section.getvaksinasi {
+		overflow-x: hidden;
+		.container {
+			.baris-getvaksin {
+				img.imagegetvac {
+					max-width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
