@@ -182,6 +182,7 @@ footer .container p {
 
 footer .container p a {
   text-decoration: none;
+  color: #007abc;
 }
 
 @media (max-width: 992px) {
